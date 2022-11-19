@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+
+/* here im writeing header styling code */
+
+header{
+background-color: #FFF;
+border-bottom:1px solid #DDD ;
+padding: 10px 0 10px 0;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 999;
+}
+
+nav{
+    display: flex;
+    align-items: center ;
+
+}
+
+header .logo{
+ width: 250px;
+}
+
+header .nav-links{
+  width: 689px;
+}
+
+header.search-area{
+    display: flex;
+    width:220px;
+
+}
+
+header .logo h2{
+    font-size: 30px;
+    color: #6c63ff;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header .nav-links ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+
+}
+
+header .nav-links ul li{
+   
+    display:inline-block;
+    padding:10px 20px 10px 20px;
+    cursor:pointer;
+    
+}
+header .nav-links ul li:hover{
+    background-color:#6c63ff;
+    transition: 0.5s;
+   
+}
+header .nav-links ul li:hover a{
+    color: #FFF;
+    transition: 0.5s;
+}
+
+header .nav-links ul li a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: #2e2e2e;
+   
+}
+
+
+header .search-area{
+    border: 1px solid #DDD;
+    padding: 10px 0px 10px 10px ;
+    border-radius:8px;
+    line-height: 10px;
+}
+
+header .search-area input[type="search"]{
+    border:0;
+    outline:noe;
+}
+header .search-area input[type="search"]:focus-visible{
+    border: 0;
+    outline: 0;
+}
+.search-icon {
+    background: #6c63ff;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 0px 9px 9px 0px;
+    cursor: pointer;
+}
+
+/* Here i'm Writing hero section style */
+
+
+.hero-wraper{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero-left{
+    width: 40%;
+}
+.hero-right {
+    width: 45%;
+}
+
+.hero-right h2 {
+    font-size:80px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.hero-right h2 > Span{
+    color: #6c63ff;
+}
+
+.buynow-btn{
+    padding:  10px 30px 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #2e2e2e;
+    color:#FFF;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.buynow-btn:hover{
+    background-color: #6c63ff;
+    transition: 0.4s;
+}
+
+
+/* here im writing sidebar style code */
+.sidebar {
+    z-index: 9;
+    width: 60px;
+    height: auto;
+    display: inline-block;
+    border-radius: 13px;
+    background-color: #FFF;
+    border: 1px solid #6c63ff;
+    position: relative;
+    top: 40%;
+    left: 50px;
+    padding: 55px 10px 30px 20px;
+    position: fixed;
+    box-shadow: 1px 1px 19px 1px rgb(167, 167, 167) ;
+}
+.sidebar span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+    position: absulate;
+    
+}
+
+.sidebar span a{
+    color: rgb(98, 99, 100);
+}
+.sidebar span a:hover{
+    color: #6c63ff;
+}
+
+/* here im  writing  bag collection style */
+
+.bag-collection{
+    padding: 60px 0px 60px 0px;
+}
+
+.bag-header h2 {
+    font-size: 50px;
+    font-family: sans-serif;
+    text-transform:uppercase;
+    text-align: center;
+    word-spacing: 20px;
+}
+
+.bag-header h2 span{
+    display: inline-block;
+    color: #6c63ff;
+    margin: 0 15px 0 15px;
+}
+
+
+.section-wraper{
+    display:flex ;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 60px;
+   
+  
+}
+.product-iteam{
+    position: relative;
+    width: 30%;
+    margin: 50px auto   ;
+    text-align: center; 
+    padding:30px; 
+    border-radius: 10px;
+ 
+}
+.product-iteam:hover{
+    
+    box-shadow:0px 0px 19px 1px #c9c9c9;
+    transition: 0.4s; 
+}
+
+
+.product-iteam img{
+
+}
+.product-iteam p{
+    padding:20px 0px;
+    font-size: 19px;
+    color: #8f8f8f;
+
+}
+
+.product-iteam > a {
+    text-decoration: none;
+     display: ;
+     font-size:19px;
+     font-weight: 700;
+     color: #2e2e2e;
+     padding-bottom: 20px;
+}
+
+.product-iteam > span{
+    visibility: hidden;
+    width: 50%;
+    margin:auto ;
+    background: linear-gradient(#6c63ff,#857eff);
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: -40px !important; 
+    left: 90px;
+    opacity: 0;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 18px;
+}
+.product-iteam > span a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: sans-serif;    
+}
+.product-iteam:hover.product-iteam > span{
+    position: absolute;
+    bottom: -20px !important;
+    left: 90px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s !important;
+} 
+/* here i'm writing about section css */
+.about-section{
+    padding: 200px 0;
+}
+
+.section-wraper{
+ justify-content: space-between;
+}
+
+.about-left{ width: 40%;}
+.about-right{
+    width: 50%;
+
+}
+
+
+.about-left h2{
+    font-size: 50px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.about-left h3{
+    font-size: 25px;
+    margin: 20px 0;
+    font-family:sans-serif ;
+}
+
+.about-left h3 > span{
+    color: #6c63ff;
+}
+.about-left p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c9c9c9;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+
+/* here i'm writing watch section css */
+
+.watch-header h2 {
+    font-size: 50px;
+    font-family: sans-serif;
+    text-transform:uppercase;
+    text-align: center;
+    word-spacing: 20px;
+}
+.watch-header h2 span{
+    display: inline-block;
+    color: #6c63ff;
+    margin: 0 15px 0 15px;
+}
+
+/* here i'm writing footer css */
+
+footer{
+    background-color: #2e2e2e;
+    padding: 20px 0;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Courier New', Courier, monospace;
+}
